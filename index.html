@@ -5,8 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a sketch</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body> 
+    <h1 class="title">Etch a sketch</h1>
+    <main>
+        <div id="container-buttons">
+            <p>Click inside grid to toggle pen</p>
+
+            <button id="btn-clear">Clear</button>
     
+            <div id="container-adjust-grid">
+                <label>Adjust the size of grid : <span id="grid-size">10 x 10</span></label>
+                <input id="input-grid-size" type="range" min="10" max="100" value="10">
+                <button id="btn-create-grid">Create new grid</button>
+            </div>
+    
+            
+            <div>
+                <input id="random" type="radio" name="option">
+                <label>Random</label>
+            </div>
+            
+            <div>
+                <input id="choose-own-color" type="radio" checked name="option">
+                <label>Choose your own color</label>
+                <input id="input-color" type="color">
+            </div>
+            
+        </div>
+
+        <div id="grid">
+        </div>
+    </main>
+
+    <script src="site.js"></script>
 </body>
 </html>
